@@ -14,6 +14,8 @@ class MainWindow : public QMainWindow
 {
     Q_OBJECT
     int count;
+    int labelx, labely, a, x, y;
+    int mainx, mainy;
 
     QPushButton *start;
     QPushButton *exit;
@@ -26,11 +28,9 @@ class MainWindow : public QMainWindow
 
     QPixmap *level;
 
+   QTimer timer;
    QTimer timer1;
-   QTimer timer2;
-   QTimer timer3;
 
-  //QMouseEvent ev;
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
